@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>米米守候 原创站 &#187; Zend framework</title>
+	<atom:link href="http://mimiz.cn/index.php/tag/zend-framework/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mimiz.cn</link>
+	<description>在喧嚣的网络 始终守候着一片宁静</description>
+	<lastBuildDate>Tue, 27 Jan 2015 23:08:30 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Zend Framework框架最小化类库</title>
+		<link>http://mimiz.cn/index.php/php/zend-framework-min-library/</link>
+		<comments>http://mimiz.cn/index.php/php/zend-framework-min-library/#comments</comments>
+		<pubDate>Thu, 09 Sep 2010 08:50:43 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Zend framework]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=315</guid>
+		<description><![CDATA[使用Zend Framework半年多了，越发觉得它设计巧妙使用灵活， 团队协作用Zend Framework开发中型项目真是很惬意的事情。 但是总能明显感觉每次请求比codeigniter之类的轻量级框架慢，消耗的系统资源也多。 于是抽空跟踪了一下Zend Framework的核心文件， 加载了一个Zend/Application.php竟然会牵连10个模块， 也就是说，在配置好数据库，不加载任何类库的情况下， 初始化一次请求至少需要加载10个类库。 即 Zend Framework 框架的最小化类库。 清单如下： Application Config Controller Db Excep [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/php/zend-framework-min-library/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>zend framework 框架中自定义父控制器</title>
+		<link>http://mimiz.cn/index.php/php/zend-framework-custom-parent-controller/</link>
+		<comments>http://mimiz.cn/index.php/php/zend-framework-custom-parent-controller/#comments</comments>
+		<pubDate>Fri, 28 May 2010 06:33:16 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Zend framework]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=274</guid>
+		<description><![CDATA[今天简单的聊聊ZF框架中的控制器。 大家都知道ZF中不可以使用__construct()构造方法，类的初始化操作需要用init()方法完成， 原因大部分朋友都应该了解，在php中，当子类有构造方法时，父类的构造方法不会被调用， 通过阅读zend/controller/Action.php的__construct()可以知道，它通过使用$this-&#62;init()，类似注入的方式，避免了这种情况。 那么在一个项目中，若干的controller可能会做一些同样的动作，比如初始化session、实例化一些对象等等， 如果在每个controller的init()中，写一些重复的代码，当contro [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/php/zend-framework-custom-parent-controller/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+	</channel>
+</rss>

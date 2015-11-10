@@ -1,0 +1,316 @@
+/*
+Theme Name: MiMiX
+Theme URI: http://MiMi.cn
+Description: MiMi's first theme.
+Version: 1.0 beta
+Author: MiMi
+Author URI: http://MiMi.cn
+*/
+
+/* all */
+* {margin:0;padding:0;}
+
+a:link{text-decoration:none;color:#000;background:transparent;}
+a:visited{text-decoration:none;color:#000;background:transparent;}
+a:hover{text-decoration:underline overline;color:#000;background:transparent;}
+a:active{text-decoration:none;color:#000;background:transparent;}
+
+body {
+	background: #fff url(images/top.gif) repeat-x;
+	font-family:verdana,Georgia,arial,sans-serif;
+	font-size:12px;
+	text-align:center;
+	color:#000;
+	line-height:2em;
+	padding: 20px 0;
+	margin:0;
+}
+
+.clear { clear: both; }
+
+p { padding: 10px 0; }
+
+#main {
+	width: 960px;
+	margin: 0 auto;
+	text-align: left;
+	font-size:1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: verdana, arial, sans-serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-size:4em;
+	margin:10px 10px;
+	line-height:1em;
+}
+
+h3 {/* 回复Leave a Reply ! */
+	font-size:2em;
+	line-height:1.3em;
+	color: #BB4411;
+}
+
+h4 {
+	font-size:1.2em;
+	line-height:1.2em;
+	color: #BB4411;
+}
+
+h5 {
+	font-size:1.2em;
+	line-height:1.2em;
+	color: #BB4411;
+}
+
+h6 {
+	font-size:1.2em;
+	line-height:1.2em;
+	color: #400000;
+}
+
+a, h1 a:hover, h2 a:hover, h3 a:hover {
+	color:#800000;
+	text-decoration:none;
+}
+
+ul {
+	padding: 10px 0;
+	list-style: none;
+}
+
+/* head  header.php*/
+#header {
+	padding: 10px 0px;
+}
+
+#header .description{
+	text-align: right;
+}
+
+#header ul.menu {
+	font-size: 12px;
+	font-weight: bold;
+	list-style-type: none;
+	border-bottom: 1px solid #000;
+	margin: 10px 0px;
+	height: 25px;
+	padding: 0px;
+}
+
+#header ul.menu li {
+	float: left;
+	margin: 0px 0px 0px 10px;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	border-top:1px solid #000;
+	background-color: #fff;
+	display:inline;
+}
+
+#header ul.menu li a {
+	float: left;
+	display: block;
+	text-decoration: none;
+	padding: 0px 5px;
+}
+
+#header ul.menu li a:hover {
+	text-decoration: none;
+	background-color: #fff;
+}
+
+#header ul.menu li.current_page_item a {
+	color: #000
+	background:#fff;
+}
+#header ul.menu li.current_page_item a:hover {
+	color: #fff;
+	background:#000;
+}
+
+#header ul.menu li.page_item a {
+	color: #000
+	background:#fff;
+}
+#header ul.menu li.page_item a:hover {
+	color: #fff;
+	background:#000;
+}
+
+/* main index.php */
+#content {
+	float:left;
+	width:660px;
+	height:100%;
+	/*overflow:hidden;*/
+}
+
+#content a img {
+	border-color: #DCEDF7;
+	margin: 0;
+}
+
+.postbox {/* 文章DIV */
+	background: #EDF6FB;
+	border-color: #DCEDF7;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	border-style: solid;
+	border-width: 2px 2px;
+
+}
+
+#content li.postbox {
+	background: #EDF6FB;
+	border-color: #DCEDF7;
+	padding: 20px 20px 20px;
+}
+
+#content .postbox h2{/* 文章标题 */
+	font-size:1.8em;
+	line-height:1.5em;
+	color: #000;
+	margin-bottom: -18px;
+}
+
+.postinfo {/* 文章时间 */
+	color: #C0C0C0;
+	font-size: 0.9em;
+	margin-top: 0;
+}
+
+#content li.postbox .postinfo { padding: 0; }
+
+#content .postinfo a:link,#content .postinfo a:visited{color:#C0C0C0;}
+
+#content .postbox .postboxblock a { color: #400000; }
+
+code {
+	border: 1px #DFDFDF solid;
+	padding: 5px;
+	background: #F8F8F8;
+}
+
+pre {
+	border: 1px #DFDFDF solid;
+	padding: 10px;
+	background: #F8F8F8;
+}
+
+.alignright { float: right; margin-left: 20px; }/* 翻页 */
+.alignleft { float: left; margin-right: 20px; }
+
+/* 侧边栏 */
+#sidebar {
+	float:right;
+	width:280px;
+	height:100%;
+}
+
+#sidebar .postbox {
+	background: #F0F9EF;
+	border-color: #D5EDD2;
+}
+
+#sidebar .postbox a { color: #5C8838; }
+
+.searchbox {/* 搜索栏 */
+	background: #F8F8F8;
+	border-color: #DFDFDF;
+	border-width: 2px;
+	border-style: solid;
+	padding: 10px 30px;
+	margin-bottom: 20px;
+	height: 30px;
+}
+
+.searchform {
+	background: #FFF;
+	border-color: #DFDFDF;
+	border-width: 1px;
+	border-style: solid;
+	padding: 1px 3px;
+	height: 20px;
+	}
+
+.searchbar {
+	background: #fff;
+	color: #999;
+	width: 150px;
+	border: none;
+}
+
+.searchsub {
+	cursor: pointer;
+	background: url(images/search.gif) no-repeat left;
+	width: 15px;
+	height: 15px;
+	border: none;
+}
+
+#sidebar #feed.postbox {/* Feed栏 */
+	background: #FFF2DA;
+	border-color: #FFDA9A;
+}
+
+#sidebar #feed.postbox a { color: #BB4411; }
+
+ul.feed li { background: url(images/feed.gif) no-repeat center left; }
+
+ul.recent li, ul.feed li { padding: 2px 0 2px 22px; }
+
+/* 评论栏 */
+.commentlist li {
+	padding: 10px 20px;
+}
+
+.commentlist li.alt {
+	background: #f8f8f8;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	border-style: solid;
+	border-width: 2px 0px;
+	border-color: #eee;
+}
+
+.commentmetadata{
+	font-size: 10px;
+}
+
+/* 回复栏 */
+#author{
+	background: #FFF7E8;
+}
+
+#email{
+	background: #F0F9EF;
+}
+
+#url{
+	background: #FFF4F4;
+}
+
+textarea {
+	background: #EDF6FB;
+	border:1px solid #C8C8C8;
+	padding: 3px;
+	width: 90%;
+	height: 100px;
+}
+
+#footer {
+	background: #f8f8f8;
+	border-color: #eee;
+	border-width: 2px 2px;
+	width:920px;
+	padding:10px 20px;
+	clear:both;
+	text-align: center;
+	margin-bottom: 20px;
+	border-style: solid;
+	margin: 0 auto;
+}

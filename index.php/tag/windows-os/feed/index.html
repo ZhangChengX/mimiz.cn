@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>米米守候 原创站 &#187; Windows-OS</title>
+	<atom:link href="http://mimiz.cn/index.php/tag/windows-os/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mimiz.cn</link>
+	<description>在喧嚣的网络 始终守候着一片宁静</description>
+	<lastBuildDate>Tue, 27 Jan 2015 23:08:30 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Windows Server 父目录权限问题</title>
+		<link>http://mimiz.cn/index.php/windows-os/windows-server-parent-directory/</link>
+		<comments>http://mimiz.cn/index.php/windows-os/windows-server-parent-directory/#comments</comments>
+		<pubDate>Sun, 23 Nov 2008 14:49:47 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Windows-OS]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=74</guid>
+		<description><![CDATA[今天在本机做Drupal测试，按以往经验本以为一帆风顺风雨无阻安装完毕， 哪知浏览install.php安装却出现以下致命错误： Warning: require_once() [function.require-once]: Unable to access ./includes/install.inc in D:wwwdrupalinstall.php on line 4 Warning: require_once(./includes/install.inc) [function.require-once]: failed to open stream: No error in D:ww [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/windows-os/windows-server-parent-directory/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>解决Win2003不能安装SP2的问题</title>
+		<link>http://mimiz.cn/index.php/windows-os/win2003-sp2/</link>
+		<comments>http://mimiz.cn/index.php/windows-os/win2003-sp2/#comments</comments>
+		<pubDate>Tue, 14 Oct 2008 14:42:42 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Windows-OS]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=71</guid>
+		<description><![CDATA[上午重做Win2003的WEB服务器，安装到SP2的时候，提示： Windows Server 2003 Service pack 2 无法安装。 用来安装Microsoft Windows的产品密钥可能无效。 Google了一下，原来Windows Server 2003 是SP1 且是盗版光盘，无法升级到SP2。 解决方法：将下面内容复制保存为以*.reg为扩展名的文件，双击写进注册表里，就OK了！ Windows Registry Editor Version 5.00 [HKEY_LOCAL_MACHINESOFTWAREMicrosoftWindowsCurrentVersion]  [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/windows-os/win2003-sp2/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Windows Server 的域和活动目录</title>
+		<link>http://mimiz.cn/index.php/windows-os/windows-server-domain-and-active-directory/</link>
+		<comments>http://mimiz.cn/index.php/windows-os/windows-server-domain-and-active-directory/#comments</comments>
+		<pubDate>Sat, 15 Mar 2008 02:17:06 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Windows-OS]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=67</guid>
+		<description><![CDATA[Windows Server 中的域是一个独立的管理单位，有独立的帐户和组策略，域也是一个逻辑概念，与网络的物理拓扑无关，可以小到只有一台域控制器DC，也可以大到包括世界各地的计算机。而活动目录则是由至少一个域组成的集合，或者说，域是活动目录的分区单位。从Windows2000开始，MS引入了活动目录的概念，DC通过活动目录AD来提供目录服务，例如维护AD数据库、审核用户账户和密码、将AD数据库复制到其它的DC等。AD库的核心文件是winnt\ntds\ntds.dit文件。组策略的具体设置值，并不存在这个文件中，而是保存在winnt\sysvol\sysvol这个共享夹下，用于向其它DC复制 [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/windows-os/windows-server-domain-and-active-directory/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

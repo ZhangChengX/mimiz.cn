@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>米米守候 原创站 &#187; Linux</title>
+	<atom:link href="http://mimiz.cn/index.php/category/linux/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mimiz.cn</link>
+	<description>在喧嚣的网络 始终守候着一片宁静</description>
+	<lastBuildDate>Tue, 27 Jan 2015 23:08:30 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>Ubuntu 14.04 安装Redmine及整合Git环境之快速偷懒篇</title>
+		<link>http://mimiz.cn/index.php/linux/set-up-ubuntu-redmine-with-git-server/</link>
+		<comments>http://mimiz.cn/index.php/linux/set-up-ubuntu-redmine-with-git-server/#comments</comments>
+		<pubDate>Mon, 22 Dec 2014 21:41:41 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Linux]]></category>
+		<category><![CDATA[OpenSource]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=471</guid>
+		<description><![CDATA[现在网上转来转去的文章太不靠谱，坑太多，填坑填得心很憔悴。 这篇文章在我填坑埋土大半天后写成，已经反复测试过3遍，整个过程只需要手动copy即可。 系统环境为 Ubuntu 14.04 LTS ，不保证其他版本依然有效，但仍可作为有效参考。 一、准备工作 # 首先升级软件包 sudo apt-get update sudo apt-get upgrade # 安装LAMP环境 sudo apt-get install tasksel tasksel sudo apt-get install phpmyadmin 二、安装 Redmine sudo apt-get install redmine [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/linux/set-up-ubuntu-redmine-with-git-server/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>搭建CentOS6+Apache+MySQL+PHP+PostFix服务器环境之快速偷懒篇</title>
+		<link>http://mimiz.cn/index.php/linux/set-up-centos6-apache-mysql-php-postfix-quickly/</link>
+		<comments>http://mimiz.cn/index.php/linux/set-up-centos6-apache-mysql-php-postfix-quickly/#comments</comments>
+		<pubDate>Mon, 23 Jun 2014 07:55:19 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=446</guid>
+		<description><![CDATA[以目前最新版CentOS6为例，整个过程只需要手动copy即可。 一、配置网络 如果购买的云主机可以省略这步，如果自己安装的CentOS需要先配置IP地址，以静态IP为例： 配置网卡： vi /etc/sysconfig/network-scripts/ifcfg-eth0 ONBOOT=yes BOOTPROTO=static IPADDR=192.168.1.100 NETMASK=255.255.255.0 修改网关： vi /etc/sysconfig/network NETWORKING=yes GATEWAY=192.168.1.1 修改DNS： vi /etc/resolv.co [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/linux/set-up-centos6-apache-mysql-php-postfix-quickly/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Ubuntu 9.10 安装 thinkpad APS 硬盘保护系统</title>
+		<link>http://mimiz.cn/index.php/linux/ubuntu-thinkpad-aps/</link>
+		<comments>http://mimiz.cn/index.php/linux/ubuntu-thinkpad-aps/#comments</comments>
+		<pubDate>Thu, 18 Feb 2010 07:42:00 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=251</guid>
+		<description><![CDATA[我的本本是T60，自从用了Linux之后，自带的硬盘保护功能就再也没用过，一直以为不支持Linux系统，早晨在Ubuntu论坛看到有人在Ubuntu8.10上面安装APS驱动成功了，才知道Linux也有APS驱动，迫不及待的去尝试一下，结果折腾了半天才弄好， 网上的方法都是针对Ubuntu8.10的，使用的包版本也都不是最新版的，现把针对最新版本系统和软件的过程记录下来： 首先，要安装hdaps驱动(参考：http://www.thinkwiki.org/wiki/HDAPS)， 官方的地址在这里：http://hdaps.sourceforge.net/ 最新版本是：hdapsd-20090 [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/linux/ubuntu-thinkpad-aps/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>iptables 端口映射的一点经验</title>
+		<link>http://mimiz.cn/index.php/linux/iptables-portmap/</link>
+		<comments>http://mimiz.cn/index.php/linux/iptables-portmap/#comments</comments>
+		<pubDate>Wed, 30 Jul 2008 13:38:51 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=117</guid>
+		<description><![CDATA[1.对于“内部实际提供服务的机器”如果和做端口转换的机器的内网ip在同一个网段内，并且“内部实际提供服务的机器”的网关就是做端口转换的机器的内网ip，这种情况下只需要一条语句： iptables -t nat -A PREROUTING -d &#8220;对外公网ip&#8221; -p tcp &#8211;dport &#8220;对外端口&#8221; -j DNAT &#8211;to &#8220;内部实际提供服务的ip&#8221;:&#8221;实际提供服务的端口&#8221; 2.对于“内部实际提供服务的机器”如果和做端口转换的机器的内网ip不在同一个网段内，或者“内部实际提 [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/linux/iptables-portmap/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>忘记Root密码的解决办法</title>
+		<link>http://mimiz.cn/index.php/linux/forget-linux-root-password/</link>
+		<comments>http://mimiz.cn/index.php/linux/forget-linux-root-password/#comments</comments>
+		<pubDate>Fri, 25 Apr 2008 05:43:29 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=69</guid>
+		<description><![CDATA[忘记了Linux Root密码怎么办？ 通过Linux单用户模式来修改密码吧。 以RHEL4.6为例，进入GRUB引导菜单， 按&#8221;e&#8221;键进入编辑模式，选择&#8221;kernel /vmlinuz-2.6.9-67…&#8221;， 再按&#8221;e&#8221;键，在文本结尾处输入&#8221;single&#8221;，回车， 按&#8221;b&#8221;键让GRUB引导单用户模式。 引导成功后，您会看到Shell提示为： sh-3.00# 用passed命令来修改密码吧! 键入： sh-3.00# passwd root 输入两遍新口令后reboot一下 [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/linux/forget-linux-root-password/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Linux distro timeline</title>
+		<link>http://mimiz.cn/index.php/linux/linux-distro-timeline/</link>
+		<comments>http://mimiz.cn/index.php/linux/linux-distro-timeline/#comments</comments>
+		<pubDate>Sun, 20 May 2007 23:56:29 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Photo]]></category>
+
+		<guid isPermaLink="false">http://mimi.vh.paanjoyhost.cn/wordpress/?p=27</guid>
+		<description><![CDATA[]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/linux/linux-distro-timeline/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>就是喜欢Linux</title>
+		<link>http://mimiz.cn/index.php/linux/love-linux/</link>
+		<comments>http://mimiz.cn/index.php/linux/love-linux/#comments</comments>
+		<pubDate>Mon, 06 Sep 2004 13:23:34 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://mimi.vh.paanjoyhost.cn/wordpress/?p=6</guid>
+		<description><![CDATA[(纪念2002-2004年盲目崇拜Linux的疯狂时光) 记得第一次接触Linux是在99年，由于好奇，在爱机上安装了简化版的Unix，看着一行行的命令提示符头昏眼花的，于是心有不甘安装了当时广为流行的RedHat Linux.当时做为菜鸟的我来说，Linux是那么的高不可攀，无从下手。不会驱动，无法配置中文，图形界面速度超慢，就觉得在windows那里得来的有关计算机的经验好像完全用不上。而喜欢Linux是在阅读了大量关于Linux的文章之后才渐渐对它有所了解，而后日久生情，深深的喜欢上了它。 有很多人会问Linux到底有什么优点，我不知道，我会回答我不知道。Linux安装复杂，可用的软件比 [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/linux/love-linux/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

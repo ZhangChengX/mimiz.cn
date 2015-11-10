@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>米米守候 原创站 &#187; Drupal</title>
+	<atom:link href="http://mimiz.cn/index.php/category/drupal/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mimiz.cn</link>
+	<description>在喧嚣的网络 始终守候着一片宁静</description>
+	<lastBuildDate>Tue, 27 Jan 2015 23:08:30 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>自定义函数显示 Drupal 分类列表</title>
+		<link>http://mimiz.cn/index.php/drupal/drupal-category-list/</link>
+		<comments>http://mimiz.cn/index.php/drupal/drupal-category-list/#comments</comments>
+		<pubDate>Wed, 09 Dec 2009 12:06:40 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Drupal]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=244</guid>
+		<description><![CDATA[Drupal中的CCK和View模块功能强大，几乎可以用鼠标点出你想要的任何内容。 但耗费的性能和效率问题也与它的功能一样强大。 其实CCK和View能实现的我们手动一样可以实现，而且异常简单。 以国内网站最常见的显示某一分类最新文章列表为例： 在模板文件 template.php 中增加一个自定义函数如下： function phptemplate_show_taxonomy($tid){ //根据tid读取术语名称 $sql ="SELECT name FROM {term_data} WHERE tid = %d"; $result = db_query(db_rewrite_sql($ [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/drupal/drupal-category-list/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Drupal中判断当前页面为分类页的方法</title>
+		<link>http://mimiz.cn/index.php/drupal/drupal-decide-taxonomy/</link>
+		<comments>http://mimiz.cn/index.php/drupal/drupal-decide-taxonomy/#comments</comments>
+		<pubDate>Wed, 04 Nov 2009 16:01:39 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Drupal]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=237</guid>
+		<description><![CDATA[在Drupal中，分类系统路径都是类似这种格式： taxonomy/term/10 taxonomy/term/17 那么，根据Drupal API，判断当前页面为分类页面，可以这样写： if ( arg(0) == &#8216;taxonomy&#8217; &#38;&#38; arg(1) == &#8216;term&#8217; ) { echo &#8216;这是分类&#8217;; } else { echo &#8216;这不是分类&#8217;; } if(arg(0) == &#8216;taxonomy&#8217; &#38;&#38; arg(1) == &#821 [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/drupal/drupal-decide-taxonomy/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Drupal 主题 模板 机制</title>
+		<link>http://mimiz.cn/index.php/drupal/drupal-themes-template/</link>
+		<comments>http://mimiz.cn/index.php/drupal/drupal-themes-template/#comments</comments>
+		<pubDate>Mon, 11 May 2009 06:30:40 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Drupal]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=196</guid>
+		<description><![CDATA[Drupal的模板机制相当灵活，在这里，我将简单的叙述一下PHPTemplate的模板机制。 page.tpl.php是最根本的模板文件，它为主题提供了整体的外观，其它的模版文件是按照区块的形式插入到page.tpl.php中的，如图所示： 一般来说，page.tpl.php中的$content包含了对node.tpl.php输出的调用，而$sidebar_left包含了对block.tpl.php输出的调用。 如果你想为不同的页面创建不同的风格，可以基于URL来创建额外的页面模板文件。 例如，当你访问http://Drupal.com/?q=user/1，PHPTemplate将以下面的顺序 [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/drupal/drupal-themes-template/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Drupal模板变量 &#8211; node.tpl.php</title>
+		<link>http://mimiz.cn/index.php/drupal/drupal-template-variable-node/</link>
+		<comments>http://mimiz.cn/index.php/drupal/drupal-template-variable-node/#comments</comments>
+		<pubDate>Fri, 20 Feb 2009 12:41:50 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Drupal]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=132</guid>
+		<description><![CDATA[node.tpl.php中可用的变量： $content: 返回节点的主体部分。 $date: 返回节点被创建的格式化日期。 $taxonomy: 返回由节点的分类词语构成的数组。 $terms: 返回与该节点相关的分类单词的HTML。 $title: 返回节点的标题。 $submitted: 返回&#8221;Submitted by&#8221;文本。 $links: 返回与节点相关的链接，比如&#8221;read more&#8221;或者&#8221;add comment&#8221;。 $name: 返回创建该页面的用户名。 $node: 返回整个节点对象和它的所有属性。 $no [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/drupal/drupal-template-variable-node/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Drupal模板变量 &#8211; page.tpl.php</title>
+		<link>http://mimiz.cn/index.php/drupal/drupal-template-variable-page/</link>
+		<comments>http://mimiz.cn/index.php/drupal/drupal-template-variable-page/#comments</comments>
+		<pubDate>Tue, 10 Feb 2009 11:54:50 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Drupal]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=129</guid>
+		<description><![CDATA[最近在用Drupal做站并活跃于Drupal.org和ChinaDrupal.org 在这里把一些Drupal模板常用的变量记录下来，便于以后查阅。 page.tpl.php中可用的变量： $base_path: Drupal安装的基本路径。 $directory: 返回主题所在的相对路径。 通常使用$directory和$base_path组成主题的绝对路径，类似这样使用: < ?php print $base_path . $directory ?> $head: 返回头部的HTML。 $head_title: 返回页面标题。 $title: 返回主内容的标题。与$head_title不同 [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/drupal/drupal-template-variable-page/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

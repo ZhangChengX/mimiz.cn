@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>米米守候 原创站 &#187; WordPress</title>
+	<atom:link href="http://mimiz.cn/index.php/tag/wordpress/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mimiz.cn</link>
+	<description>在喧嚣的网络 始终守候着一片宁静</description>
+	<lastBuildDate>Tue, 27 Jan 2015 23:08:30 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>自定义WordPress主题widgets</title>
+		<link>http://mimiz.cn/index.php/wordpress/wordpress-custom-widgets/</link>
+		<comments>http://mimiz.cn/index.php/wordpress/wordpress-custom-widgets/#comments</comments>
+		<pubDate>Mon, 05 May 2014 08:53:23 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=435</guid>
+		<description><![CDATA[将以下代码添加到functions.php： function widget_footer_copyright() { register_sidebar(array( 'id'=&#62;'widget_footer_copyright', 'name'=&#62;'页脚版权信息' )); } add_action('widgets_init','widget_footer_copyright'); 在模板文件中使用： &#60;ul&#62;&#60;?php dynamic_sidebar(&#8216;widget_footer_copyright&#8217;); ?&#62;&#60;/ul&#038;gt [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/wordpress/wordpress-custom-widgets/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>在WordPress主题中使用自定义Shortcode</title>
+		<link>http://mimiz.cn/index.php/wordpress/wordpress-custom-shortcode/</link>
+		<comments>http://mimiz.cn/index.php/wordpress/wordpress-custom-shortcode/#comments</comments>
+		<pubDate>Mon, 05 May 2014 08:44:41 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=432</guid>
+		<description><![CDATA[WordPress 的 Shortcode 常用的主要有3种： [shortcode foo=&#8221;bar&#8221;] [shortcode]text[/shortcode] [shortcode foo=&#8221;bar&#8221;]text[/shortcode] 这里简单介绍第一种的定制方法，编辑以下代码到functions.php： // [redirect url="?page_id=100"] function sc_redirect( $atts ){ extract( shortcode_atts( array( 'url' =&#62; 'http://mim [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/wordpress/wordpress-custom-shortcode/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>在WordPress主题中自定义菜单</title>
+		<link>http://mimiz.cn/index.php/wordpress/custom-menu-in-wordpress-theme/</link>
+		<comments>http://mimiz.cn/index.php/wordpress/custom-menu-in-wordpress-theme/#comments</comments>
+		<pubDate>Wed, 16 Apr 2014 12:55:06 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[theme]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=429</guid>
+		<description><![CDATA[1. 首先在主题的functions.php中注册菜单： register_nav_menus(array( 'primary_nav' => 'Primary Navigation', 'secondary_nav' => 'Primary Navigation' )); 2. 在后台的 Appearance -> Menus 中设置菜单项。 3. 在主题中显示菜单： wp_nav_menu( array('menu_class' => 'primary_nav', 'theme_location' =>'primary_nav') ); wp_nav_menu(); 函数支持丰富的参数，详 [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/wordpress/custom-menu-in-wordpress-theme/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>在WordPress中创建自定义的文章类型</title>
+		<link>http://mimiz.cn/index.php/wordpress/wordpress-custom-post-types/</link>
+		<comments>http://mimiz.cn/index.php/wordpress/wordpress-custom-post-types/#comments</comments>
+		<pubDate>Wed, 29 Aug 2012 07:58:55 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=403</guid>
+		<description><![CDATA[例如我想创建一个Events类型，用来发布企业活动事件，其实异常简单，我们分三步来操作： 一、创建Events类型： 编辑functions.php 文件，插入以下代码： add_action('init', 'register_events'); function register_events() { register_post_type('events', array( 'labels' =&#62; array( 'name' =&#62; 'Events', 'singular_name' =&#62; 'Event', 'add_new' =&#62; 'Add Event', 'add_ [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/wordpress/wordpress-custom-post-types/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>从wordpress分类列表的widget中移除某个分类的插件</title>
+		<link>http://mimiz.cn/index.php/wordpress/exclude-someone-from-categories-widget-for-wordpress-plugin/</link>
+		<comments>http://mimiz.cn/index.php/wordpress/exclude-someone-from-categories-widget-for-wordpress-plugin/#comments</comments>
+		<pubDate>Thu, 26 Apr 2012 08:15:56 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[Plugin]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=386</guid>
+		<description><![CDATA[WordPress的分类小工具会把所有的分类都显示出来， 有时候我们只想显示其中的几个分类，或者隐藏某个分类。 对于这种需求，可以使用wp_list_categories($args)这个模板标签来控制它。 例如只想显示ID为1、3、5的分类： wp_list_categories('include=1,3,5'); 不显示ID为2、4的分类且显示每个分类的日志数： wp_list_categories('exclude=2,4&#38;show_count=1'); 详细说明请参考官方文档： http://codex.wordpress.org/Template_Tags/wp_list_c [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/wordpress/exclude-someone-from-categories-widget-for-wordpress-plugin/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>配置 WordPress 网络(多站点)功能 及 域名映射</title>
+		<link>http://mimiz.cn/index.php/wordpress/wordpress-network-multisite-domain-mapping/</link>
+		<comments>http://mimiz.cn/index.php/wordpress/wordpress-network-multisite-domain-mapping/#comments</comments>
+		<pubDate>Fri, 04 Nov 2011 06:13:41 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[PHP]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=374</guid>
+		<description><![CDATA[自从Wordpress 3.0开始，新增了很多令人惊喜的特性，比如自定义POST类型，分类升级，自定义菜单，增加网络功能等，其中的网络功能即是传说中的多站点了，它整合了Wordpress MU的核心代码，让我们可以只用一套程序实现像WP MU一样的站群系统。 一、安装： 正常安装Wordpress，如果已经安装过，请先备份网站，然后停用所有插件。 二、激活多站点模式： 编辑文件 wp-config.php 在/* That&#8217;s all, stop editing! Happy blogging. */这一行之前加入以下代码： /* allow multisite */ define [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/wordpress/wordpress-network-multisite-domain-mapping/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>WordPress 模板机制</title>
+		<link>http://mimiz.cn/index.php/wordpress/wordpress-template/</link>
+		<comments>http://mimiz.cn/index.php/wordpress/wordpress-template/#comments</comments>
+		<pubDate>Fri, 12 Dec 2008 02:52:19 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=80</guid>
+		<description><![CDATA[这是 WordPress 模板的工作原理，从 WordPress 中文 找到的， 原作是一位国外友人，Tigerkin 做了重绘，在此感谢。 图示 简洁明了，一目了然，被奉为经典，今转帖于此，便于以后查阅。 最近在用WordPress开发通用型企业站，越来越体验到WordPress的灵活易用， 比那些所谓万能的CMS强多了，我还是同意那个观点： “‘CMS要有很多复杂的功能’是蒙人的。” 毕竟，能提高生产力的工具才是大众所需。 &#160;]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/wordpress/wordpress-template/feed/</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>WordPress模板标签手册</title>
+		<link>http://mimiz.cn/index.php/wordpress/wordpress-template-tags/</link>
+		<comments>http://mimiz.cn/index.php/wordpress/wordpress-template-tags/#comments</comments>
+		<pubDate>Wed, 12 Mar 2008 11:46:06 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[Wordpress]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/index.php/wordpress/wordpress-template-tags/</guid>
+		<description><![CDATA[这是我在开发Wordpress模板过程中收集的一些常用函数模板标签。 整理出来 给需要的朋友看，也为以后自己查阅方便。 更多详细信息请参考WordPress官方文档(http://codex.wordpress.org/Template_Tags)。 常用的模板标签函数： < ?php bloginfo('name'); ?> : 博客名称 < ?php bloginfo('url'); ?> : 博客 Url < ?php bloginfo('description'); ?> : 博客描述 < ?php bloginfo('stylesheet_url'); ?> : CSS文件路径 <  [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/wordpress/wordpress-template-tags/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

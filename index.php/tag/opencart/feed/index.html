@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>米米守候 原创站 &#187; OpenCart</title>
+	<atom:link href="http://mimiz.cn/index.php/tag/opencart/feed/" rel="self" type="application/rss+xml" />
+	<link>http://mimiz.cn</link>
+	<description>在喧嚣的网络 始终守候着一片宁静</description>
+	<lastBuildDate>Tue, 27 Jan 2015 23:08:30 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.3.1</generator>
+	<item>
+		<title>定制OpenCart首页和分类页展示的产品</title>
+		<link>http://mimiz.cn/index.php/open-source/custom-opencart-product/</link>
+		<comments>http://mimiz.cn/index.php/open-source/custom-opencart-product/#comments</comments>
+		<pubDate>Thu, 29 Sep 2011 12:09:18 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[OpenSource]]></category>
+		<category><![CDATA[OpenCart]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=363</guid>
+		<description><![CDATA[OpenCart早已把常用的功能写好提供给我们了，直接拿来使用即可。 比如我们想修改首页产品图片为显示8个最畅销产品，只需要调用： $this-&#62;model_catalog_product-&#62;getBestSellerProducts(8) 如果想显示最新的6个产品，可以这样使用： $this-&#62;model_catalog_product-&#62;getLatestProducts(6) 显示指定的商品： $this-&#62;model_catalog_product-&#62;getProducts() 最受欢迎的商品： $this-&#62;model_catalog_pro [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/open-source/custom-opencart-product/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>OpenCart 模板创建 module 简单步骤</title>
+		<link>http://mimiz.cn/index.php/open-source/opencart-template-create-module/</link>
+		<comments>http://mimiz.cn/index.php/open-source/opencart-template-create-module/#comments</comments>
+		<pubDate>Mon, 19 Sep 2011 02:14:42 +0000</pubDate>
+		<dc:creator><![CDATA[MiMi]]></dc:creator>
+				<category><![CDATA[OpenSource]]></category>
+		<category><![CDATA[OpenCart]]></category>
+
+		<guid isPermaLink="false">http://mimiz.cn/?p=359</guid>
+		<description><![CDATA[假如我想创建一个侧边栏模块sidebar，让每一个页面都可以复用，步骤如下： 1. 在controller/module目录下新建sidebar.php文件。 2. 添加文件内容为： class ControllerModuleSidebar extends Controller { protected function index($setting) { $this-&#62;template = $this-&#62;config-&#62;get('config_template') . '/template/module/sidebar.tpl'; $this-&#62;render(); } [&#8230;]]]></description>
+		<wfw:commentRss>http://mimiz.cn/index.php/open-source/opencart-template-create-module/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

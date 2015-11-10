@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head profile="http://gmpg.org/xfn/1">
+<title>   XmiServer_v2.4.2 ASP+CGI+PHP+JSP+MySQL 全能服务器套件发布！ -  米米守候 原创站</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="Author" content="MiMi" />
+<meta name="Copyright" content="MiMiz.cn" />
+<meta name="Description" content="觅觅守候" />
+<meta name="Keywords" content="mimi,觅觅,觅觅守候" />
+<link rel="stylesheet" href="http://mimiz.cn/wp-content/themes/mimix/style.css" type="text/css" media="screen, projection" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://mimiz.cn/index.php/feed/" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://mimiz.cn/index.php/feed/rss/" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://mimiz.cn/index.php/feed/atom/" />
+<link rel="pingback" href="http://mimiz.cn/xmlrpc.php" />
+<link rel="icon" href="http://mimiz.cn/x/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://mimiz.cn/x/favicon.ico" type="image/x-icon" />
+<link rel="alternate" type="application/rss+xml" title="米米守候 原创站 &raquo; XmiServer_v2.4.2 ASP+CGI+PHP+JSP+MySQL 全能服务器套件发布！评论Feed" href="http://mimiz.cn/index.php/xmiserver/xmiserver-v242-apache-tomcat-php-jsp-cgi-asp-mysql/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/mimiz.cn\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='cptch_stylesheet-css'  href='http://mimiz.cn/wp-content/plugins/captcha/css/style.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://mimiz.cn/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mimiz.cn/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://mimiz.cn/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='欧洲中世纪的七大古魔法书' href='http://mimiz.cn/index.php/reprint/europe-magic-book/' />
+<link rel='next' title='关于IIS连接数的问题' href='http://mimiz.cn/index.php/reprint/iis/' />
+<meta name="generator" content="WordPress 4.3.1" />
+<link rel='canonical' href='http://mimiz.cn/index.php/xmiserver/xmiserver-v242-apache-tomcat-php-jsp-cgi-asp-mysql/' />
+<link rel='shortlink' href='http://mimiz.cn/?p=20' />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+</head>
+<body>
+<div id="main"><!-- 主框架 -->
+
+<div id="header">
+	<h1><a href="http://mimiz.cn"><img src="http://mimiz.cn/x/logomimishouhou.gif" alt="觅觅守候" title"觅觅守候" style="margin:0;border:0"></a><!-- <a href="<?php// bloginfo('url'); ?>"><?php// bloginfo('name'); ?></a> --></h1><br />
+	<div class="description">在喧嚣的网络 始终守候着一片宁静</div>
+	<ul class="menu"><!-- 主菜单 -->
+		<li class="current_page_item"><a href="http://mimiz.cn/">Home</a></li>
+			<li class="page_item page-item-23"><a href="http://mimiz.cn/index.php/download-xmiserver/">XmiServer</a></li>
+<li class="page_item page-item-32"><a href="http://mimiz.cn/index.php/archives/">Archives</a></li>
+<li class="page_item page-item-37"><a href="http://mimiz.cn/index.php/about-mimi/">About</a></li>
+		<li class="page_item"><a href="http://mimiz.cn/index.php/mimi/guestbook/">GuestBook</a></li>
+	</ul>
+	
+	<div class="clear"></div>
+</div>
+
+<div id="content">
+
+
+	<div class="postbox">
+		<h2><a href="http://mimiz.cn/index.php/xmiserver/xmiserver-v242-apache-tomcat-php-jsp-cgi-asp-mysql/" rel="bookmark" title="Permanent Link to XmiServer_v2.4.2 ASP+CGI+PHP+JSP+MySQL 全能服务器套件发布！">XmiServer_v2.4.2 ASP+CGI+PHP+JSP+MySQL 全能服务器套件发布！</a></h2>
+		<p class="postinfo">MiMi Posted on 2007.03.04 13:21 // <a href="http://mimiz.cn/index.php/xmiserver/xmiserver-v242-apache-tomcat-php-jsp-cgi-asp-mysql/#comments" class="comments-link" >53 Comments</a></p>
+		<div class="postboxblock">
+			<p>XmiServer_v2.4.2 ASP+CGI+PHP+JSP+MySQL 全能服务器套件发布！</p>
+<p>软件名称：XmiServer_v2.4.2<br />
+软件版本：v2.4.2<br />
+软件授权：免费软件<br />
+使用平台：WinNT/XP/2000/2003</p>
+<p>下载地址：<br />
+1.<span style="text-decoration: line-through;">http://mimiz.cn/XmiServer_v2.4.2.exe</span>(新版本已发布，旧版本暂停下载)</p>
+<p>简介：<br />
+XmiServer_v2.4是一款基于Apache+Tomcat的全能服务器套件，<br />
+拥有安装简单、便捷、绿色、免配置等特点，<br />
+可以快速搭建 ASP+CGI+PHP+JSP+MySQL 全能网站服务器平台，<br />
+方便您调试和开发ASP、CGI、PHP、JSP 等程序。</p>
+<p>目录简要说明：<br />
+XmiServer<br />
+├─Links 各组件快捷链接<br />
+├─Server 程序主目录<br />
+│ ├─Apache Apache程序目录<br />
+│ ├─Database MySQL 数据库目录<br />
+│ │ ├─Database_MySQL5 MySQL5 数据库目录<br />
+│ │ └─Database_MySQL4 MySQL4 数据库目录<br />
+│ ├─JAVA JAVA程序目录<br />
+│ ├─MySQL4 MySQL4 程序目录<br />
+│ ├─MySQL5 MySQL5 程序目录<br />
+│ ├─PHP PHP程序目录<br />
+│ ├─phpMyAdmin phpMyAdmin目录<br />
+│ ├─TempLogs 临时文件及日志文件目录<br />
+│ ├─Tomcat Tomcat程序目录<br />
+│ └─Zend Zend Optimizer 程序目录<br />
+└─wwwRoot 虚拟主机网站根目录<br />
+├─asp ASP程序目录<br />
+├─cgi-bin CGI程序目录<br />
+└─webapps JSP程序目录</p>
+<p>使用程序版本：<br />
+Apache v2.2.4<br />
+Tomcat v5.5.20<br />
+Netbox v2.8.4128<br />
+PHP v5.2.0<br />
+MySQL5 v5.0.27<br />
+MySQL4 v4.0<br />
+MiniPerl v5.8<br />
+JDK v1.5.0_07<br />
+Zend v3.2.0<br />
+phpMyAdmin v2.9.1.1</p>
+			<p class="postinfo">如无特别说明  本站所有作品皆为觅觅原创  转载请注明出处  觅觅守候  MiMiz.cn</p>
+			TrackBack: <a href="http://mimiz.cn/index.php/xmiserver/xmiserver-v242-apache-tomcat-php-jsp-cgi-asp-mysql/trackback/" title="PingBack">http://mimiz.cn/index.php/xmiserver/xmiserver-v242-apache-tomcat-php-jsp-cgi-asp-mysql/trackback/</a>
+
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="commentblock">
+		
+<!-- You can start editing here. -->
+
+	<h6 id="comments">53 Responses to &#8220;XmiServer_v2.4.2 ASP+CGI+PHP+JSP+MySQL 全能服务器套件发布！&#8221;</h6>
+
+	<ol class="commentlist">
+
+	
+		<li class="alt" id="comment-52">
+			<cite>mimi</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-52" title="">2007.03.04 13:28</a> </small>
+
+			<p>更新纪录：</p>
+<p>优化了 MySQL5 配置<br />
+优化了安装程序 Setup.exe<br />
+修改了综合控制面板<br />
+修改 MySQL4 默认端口为 3304<br />
+修正 UTF-8 乱码问题<br />
+修正 phpmyadmin 一点小错误<br />
+Apache        更新至v2.2.4</p>
+<p></p>
+<p>关于2.4.2版本ASP目录错误的解决方法：</p>
+<p>请先关闭XmiServASP.exe服务程序，<br />
+把 $XmiServer安装目录$ /Server/Apache/bin/目录下的XmiServASP.exe文件<br />
+复制到 $XmiServer安装目录$ 下，<br />
+重新启动即可解决问题。</p>
+
+		</li>
+
+	
+	
+		<li id="comment-53">
+			<cite>frankis</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-53" title="">2007.03.30 23:26</a> </small>
+
+			<p>我装了后。点CGI 测试<br />
+显示这个页<br />
+是不是正常啊？？？？<br />
+我要装leobbs啊</p>
+<p>COMSPEC=&#8221;C:\windows\system32\cmd.exe&#8221;<br />
+DOCUMENT_ROOT=&#8221;D:/XmiServer/wwwRoot&#8221;<br />
+GATEWAY_INTERFACE=&#8221;CGI/1.1&#8243;<br />
+HTTP_ACCEPT=&#8221;*/*&#8221;<br />
+HTTP_ACCEPT_ENCODING=&#8221;gzip, deflate&#8221;<br />
+HTTP_ACCEPT_LANGUAGE=&#8221;zh-cn&#8221;<br />
+HTTP_CONNECTION=&#8221;Keep-Alive&#8221;<br />
+HTTP_COOKIE=&#8221;NVOYZXZRAQWELCPCVJJV=SNYNHSLEFHRWIAUIVJKENAU<br />
+YQRNHXREDALUZHOWY&#8221;<br />
+HTTP_HOST=&#8221;localhost&#8221;<br />
+HTTP_REFERER=&#8221;http://localhost/&#8221;<br />
+HTTP_USER_AGENT=&#8221;Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Maxthon)&#8221;<br />
+PATH=&#8221;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\Common Files\Adobe\AGL&#8221;<br />
+PATHEXT=&#8221;.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH&#8221;<br />
+QUERY_STRING=&#8221;&#8221;<br />
+REMOTE_ADDR=&#8221;127.0.0.1&#8243;<br />
+REMOTE_PORT=&#8221;1411&#8243;<br />
+REQUEST_METHOD=&#8221;GET&#8221;<br />
+REQUEST_URI=&#8221;/cgi-bin/index.cgi&#8221;<br />
+SCRIPT_FILENAME=&#8221;D:/XmiServer/wwwRoot/cgi-bin/index.cgi&#8221;<br />
+SCRIPT_NAME=&#8221;/cgi-bin/index.cgi&#8221;<br />
+SERVER_ADDR=&#8221;127.0.0.1&#8243;<br />
+SERVER_ADMIN=&#8221;webmaster@localhost&#8221;<br />
+SERVER_NAME=&#8221;localhost&#8221;<br />
+SERVER_PORT=&#8221;80&#8243;<br />
+SERVER_PROTOCOL=&#8221;HTTP/1.1&#8243;<br />
+SERVER_SIGNATURE=&#8221;<br />
+<address>Apache/2.2.4 (Win32) PHP/5.2.0 DAV/2 Server at localhost Port 80</address>
+<p>\n&#8221;<br />
+SERVER_SOFTWARE=&#8221;Apache/2.2.4 (Win32) PHP/5.2.0 DAV/2&#8243;<br />
+SYSTEMROOT=&#8221;C:\windows&#8221;<br />
+WINDIR=&#8221;C:\windows&#8221;</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-54">
+			<cite>mimi</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-54" title="">2007.03.31 16:04</a> </small>
+
+			<p>正常，这是CGI的测试信息，说明CGI没有问题</p>
+<p>但 XmiServer 集成的是一个简化的 MINIPERL ，不能运行太复杂的程序。</p>
+<p>您可以试试，如果CGI出现错误，请下载完整PERL 5.8 拷贝到PERL目录即可。</p>
+
+		</li>
+
+	
+	
+		<li id="comment-55">
+			<cite>loulou</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-55" title="">2007.04.22 20:26</a> </small>
+
+			<p>mimi，你给的地址不是找不到文件，就是下不了啊！<br />
+给个方便点的地方吧！</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-56">
+			<cite><a href='http://mi.53e.cn' rel='external nofollow' class='url'>mimi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-56" title="">2007.04.22 23:10</a> </small>
+
+			<p>由于网站数据损坏，暂时不能提供下载了。<br />
+我会在近期内更新链接，谢谢关注。</p>
+
+		</li>
+
+	
+	
+		<li id="comment-57">
+			<cite>mimi</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-57" title="">2007.04.23 16:10</a> </small>
+
+			<p>OK!下载链接已更新。</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-58">
+			<cite><a href='http://53e.cn' rel='external nofollow' class='url'>mimi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-58" title="">2007.04.23 16:21</a> </small>
+
+			<p>先说明一下,<br />
+由于前几天网站数据损坏，<br />
+导致最新版本也随之丢失，<br />
+这个版本是2007年03月04日发布的修正版，<br />
+至目前为止，<br />
+已发现少许小BUG，<br />
+但并不影响使用。<br />
+原计划是利用这几天时间重新开发一个新版本，<br />
+但无奈计划不如变化快，<br />
+明天以后我要去做一个内部网络测试，<br />
+没有足够时间了，<br />
+所以新版本只好搁浅，<br />
+等以后才能继续开发。<br />
+所谓以后，<br />
+大概是年底或者明年吧。<br />
+^_^</p>
+
+		</li>
+
+	
+	
+		<li id="comment-59">
+			<cite><a href='http://www.dotdo.com' rel='external nofollow' class='url'>小郝</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-59" title="">2007.05.07 23:58</a> </small>
+
+			<p>这个软件太强了。正好有作业要用到JSP，这个便捷的安装方式省了不少时间。呵呵。谢谢站长了~</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-60">
+			<cite><a href='http://mi.53e.cn' rel='external nofollow' class='url'>mimi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-60" title="">2007.05.09 13:02</a> </small>
+
+			<p>客气，感谢支持本软件。<br />
+^_^</p>
+
+		</li>
+
+	
+	
+		<li id="comment-61">
+			<cite><a href='http://MIMI' rel='external nofollow' class='url'>洪亮</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-61" title="">2007.05.09 18:52</a> </small>
+
+			<p>为什么我装完这个软件 服务器默认就把所有域名都链接到xmiserver的首页上去啊<br />
+应该到哪儿调试啊</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-62">
+			<cite>mimi</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-62" title="">2007.05.10 08:41</a> </small>
+
+			<p>所有域名是指所有2级域名吗？</p>
+<p>应该是DNS服务器配置问题，</p>
+<p>或者是域名泛解析了。</p>
+<p>请具体详细描述一下吧。</p>
+
+		</li>
+
+	
+	
+		<li id="comment-63">
+			<cite><a href='http://www.spaces.msn.com/conghuizhi' rel='external nofollow' class='url'>丛慧智</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-63" title="">2007.05.10 14:18</a> </small>
+
+			<p>为什么我安装后的xmiserver服务不能启动呢?</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-64">
+			<cite>mimi</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-64" title="">2007.05.11 13:07</a> </small>
+
+			<p>请确认是否安装了 IIS ，如果是，则停止 IIS 服务即可。</p>
+<p>导致 XmiServer 或 Apache 不能正常启动的原因很多。</p>
+<p>请说明错误信息，然后才能对症下药。</p>
+<p>^_^ </p>
+
+		</li>
+
+	
+	
+		<li id="comment-65">
+			<cite><a href='http://ww' rel='external nofollow' class='url'>小王</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-65" title="">2007.05.20 01:53</a> </small>
+
+			<p>为什么我的jsp和asp环境能起来,而php的环境起不来啊,我百般不得其解,请指教~~~</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-66">
+			<cite>mimi</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-66" title="">2007.05.20 11:53</a> </small>
+
+			<p>我晕~~~<br />
+看来你的问题不是一句两句话能说完的<br />
+还是加我 QQ：85428686 详细讨论吧<br />
+^_^</p>
+
+		</li>
+
+	
+	
+		<li id="comment-67">
+			<cite>值得</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-67" title="">2007.05.27 11:48</a> </small>
+
+			<p>我的怎么会杀出毒？</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-68">
+			<cite>值得</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-68" title="">2007.05.27 11:49</a> </small>
+
+			<p>Trojan.BAT.Agent.a 病毒</p>
+
+		</li>
+
+	
+	
+		<li id="comment-69">
+			<cite>mimi</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-69" title="">2007.05.27 18:45</a> </small>
+
+			<p>我只是把原来的setup.bat编译成setup.exe了。</p>
+<p>可能个别杀毒软件会把它误认为病毒吧。</p>
+<p>我当时疏忽这个问题了。谢谢您的提醒。</p>
+<p>我会在下个版本中修正这个问题。 </p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-70">
+			<cite>mimi</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-70" title="">2007.07.09 14:12</a> </small>
+
+			<p>关于2.4.2版本ASP目录错误的解决方法：</p>
+<p>请先关闭XmiServASP.exe服务程序，<br />
+把 $XmiServer安装目录$ /Server/Apache/bin/目录下的XmiServASP.exe文件<br />
+复制到 $XmiServer安装目录$ 下，<br />
+重新启动即可解决问题。</p>
+
+		</li>
+
+	
+	
+		<li id="comment-71">
+			<cite>没人疼</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-71" title="">2007.07.12 16:37</a> </small>
+
+			<p>MySQL Front管理MYSQL也很不错！把这个加进去就完美了！</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-72">
+			<cite>hhsky</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-72" title="">2007.09.05 01:10</a> </small>
+
+			<p>支持.net吗？？</p>
+
+		</li>
+
+	
+	
+		<li id="comment-73">
+			<cite><a href='http://mi.53e.cn' rel='external nofollow' class='url'>mimi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-73" title="">2007.09.05 09:44</a> </small>
+
+			<p>目前的版本暂不支持</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-74">
+			<cite><a href='http://www.sungli.net' rel='external nofollow' class='url'>sungli</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-74" title="">2007.09.17 14:11</a> </small>
+
+			<p>Starting XmiServer. Please Waiting……<br />
+Starting MySQL Server</p>
+<p>MySQL5 服务已经启动成功。</p>
+<p>Starting Apache Server<br />
+XmiServer 服务正在启动 .<br />
+XmiServer 服务无法启动。</p>
+<p>发生服务特定错误: 1.</p>
+<p>请键入 NET HELPMSG 3547 以获得更多的帮助。</p>
+<p>Starting NetBox Server<br />
+Starting Tomcat Server<br />
+The JAVA_HOME environment variable is not defined correctly<br />
+This environment variable is needed to run this program<br />
+NB: JAVA_HOME should point to a JDK not a JRE</p>
+<p>XmiServer启动完毕！按任意键返回……</p>
+
+		</li>
+
+	
+	
+		<li id="comment-75">
+			<cite><a href='http://mimiz.cn' rel='external nofollow' class='url'>mimi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-75" title="">2007.09.20 10:20</a> </small>
+
+			<p>建议你打开事件查看器，看看详细错误情况，是不是端口冲突。例如IIS占用了80端口。<br />
+另外检查环境变量 JAVA_HOME 是否正确。</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-76">
+			<cite>redking</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-76" title="">2007.09.29 14:11</a> </small>
+
+			<p>关于2.4.2版本ASP目录错误的解决方法：</p>
+<p>请把$XmiServer安装目录$/Server/Apache/bin/目录下的XmiServASP.exe文件复制到$XmiServer安装目录$下，即可解决问题。</p>
+<p>不能解决，还是老样子，</p>
+
+		</li>
+
+	
+	
+		<li id="comment-77">
+			<cite><a href='http://mimiz.cn' rel='external nofollow' class='url'>mimi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-77" title="">2007.09.29 18:24</a> </small>
+
+			<p>那么请先关闭XmiServASP.exe服务，再重新运行一遍即可。 <img src="http://mimiz.cn/wp-includes/images/smilies/simple-smile.png" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-78">
+			<cite>redking</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-78" title="">2007.09.29 20:29</a> </small>
+
+			<p>这些都试过了~~，问下，在你自己机器上测试时有没有通过？？<br />
+还有xmiservASP.exe直接位置移动(复制）可以吗？？好象没用的吧，脚本还是运行在原目录下执行xmiservASP.exe的，ASP文件执行目录放在那里了呀？通过http方式访问居然看不到ASP这个目录，里面的文件也无法执行（因为服务器认为这个目录根本不存？？？？？不解），把ASP这个文件夹改名后依然显示的是ASP探针页面，我都不知道这个探针页面从那里加载的，<br />
+还有asp探针页面显示的当前页面文件实际位置居然是在D://XmiServer/&#8230;/Apache/bin/wwwroot/&#8230;./asp/目录里，实际上这个目录根本就不存在。。<br />
+注：我安装的位置是D://XmiServer/目录下<br />
+希望能早日解决。。。。</p>
+
+		</li>
+
+	
+	
+		<li id="comment-79">
+			<cite>redking</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-79" title="">2007.09.29 20:31</a> </small>
+
+			<p>我QQ是3771127以经加了你了，帮忙搞定呀~。。。呵呵~~</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-80">
+			<cite><a href='http://mimiz.cn' rel='external nofollow' class='url'>mimi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-80" title="">2007.10.08 10:17</a> </small>
+
+			<p>那好，QQ上详细给你讲解一下。</p>
+
+		</li>
+
+	
+	
+		<li id="comment-81">
+			<cite><a href='http://zenkin.cn' rel='external nofollow' class='url'>zenkin</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-81" title="">2007.10.26 13:14</a> </small>
+
+			<p>ASP的问题还没有解决瓦`~~大哥&#8220;</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-82">
+			<cite><a href='http://www.im47.cn/' rel='external nofollow' class='url'>思奇</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-82" title="">2008.03.05 17:07</a> </small>
+
+			<p>期待新的版本</p>
+
+		</li>
+
+	
+	
+		<li id="comment-83">
+			<cite>小豬豬</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-83" title="">2008.03.11 01:56</a> </small>
+
+			<p>都不能下載,去&#8230;&#8230;..學人家搞什么服務器&#8230;&#8230;..</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-84">
+			<cite><a href='http://MiMiz.cn' rel='external nofollow' class='url'>MiMi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-84" title="">2008.03.29 19:32</a> </small>
+
+			<p>网站有流量限制，暂不提供旧版本下载，新版本开发中，敬请期待。</p>
+
+		</li>
+
+	
+	
+		<li id="comment-506">
+			<cite>月亮不在鸟</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-506" title="">2008.09.06 21:57</a> </small>
+
+			<p>MIMI，快把新版本发出来吧~我期待着呢</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-657">
+			<cite>聪聪</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-657" title="">2008.10.14 14:02</a> </small>
+
+			<p>对啊  都在等你的东西呢。。。能加我QQ么？  八五一九三零一九</p>
+
+		</li>
+
+	
+	
+		<li id="comment-658">
+			<cite><a href='http://mimiz.cn' rel='external nofollow' class='url'>MiMi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-658" title="">2008.10.14 22:28</a> </small>
+
+			<p>感谢大家对本软件的厚爱<br />
+XmiServer_v2.4.2临时下载地址为：<br />
+<a href="http://test.53e.cn/XmiServer_v2.4.2_20070304.exe" rel="nofollow">http://test.53e.cn/XmiServer_v2.4.2_20070304.exe</a></p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-689">
+			<cite>月亮不在鸟</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-689" title="">2008.10.19 17:28</a> </small>
+
+			<p>无法下载啊~~~~~~~~·</p>
+
+		</li>
+
+	
+	
+		<li id="comment-749">
+			<cite><a href='http://mimiz.cn/' rel='external nofollow' class='url'>MiMi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-749" title="">2008.11.04 17:12</a> </small>
+
+			<p>新版本已经做好了，正在内侧中……</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-778">
+			<cite><a href='http://www.harpong.cn' rel='external nofollow' class='url'>Harpong</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-778" title="">2008.11.08 10:55</a> </small>
+
+			<p>我知道一个软件也很不错，名为APMServ。<br />
+APMServ 5.2.6 绿色版_一键搭建PHP＋MySQL＋ASP＋Nginx平台的下载地址为：http://www.xdowns.com/soft/1/71/2008/Soft_47468.html<br />
+他做的也不错，希望新的版本可以借鉴下优点。另外，偶也将你的服务器改了下版，更新了下里面的东东，确实非常好用，谢谢你！</p>
+
+		</li>
+
+	
+	
+		<li id="comment-1603">
+			<cite><a href='http://202.114.36.250' rel='external nofollow' class='url'>gxmshcf</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1603" title="">2009.03.04 00:03</a> </small>
+
+			<p>mimiz同志！您的新版何时出啊？大家都等不及了咧！<br />
+翻遍了整个网络，连2.4.2都找不到下的！<br />
+快……快……再快……我们期待着……</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1609">
+			<cite><a href='http://mimiz.cn/' rel='external nofollow' class='url'>MiMi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1609" title="">2009.03.04 17:11</a> </small>
+
+			<p>感谢Harpong同学的修改版，大家可以下载Harpong制作的AAWServer，对主要部件都做了升级。下载地址：http://hi.baidu.com/harpongs/blog/item/f90c61de4f22111448540325.html</p>
+<p>近期我会把在服务器内侧的XmiServer_v2.5.1打包发布出来。</p>
+
+		</li>
+
+	
+	
+		<li id="comment-1616">
+			<cite><a href='http://mimiz.cn' rel='external nofollow' class='url'>gxmshcf</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1616" title="">2009.03.05 11:11</a> </small>
+
+			<p>aawserver不是绿色的，我把它解包了，后来手动配置出了点问题。以后就是运行安装程序安装，JSP总是出错。<br />
+还是你的好用，昨天把以前下载的2.3先应付着用了<br />
+期待2.5.1！</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-1678">
+			<cite><a href='http://mimiz.cn/' rel='external nofollow' class='url'>MiMi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-1678" title="">2009.03.23 16:41</a> </small>
+
+			<p>新版本已经发布：<br />
+<a href="http://mimiz.cn/xmiserver/" rel="nofollow">http://mimiz.cn/xmiserver/</a></p>
+<p><a href="http://mimiz.cn/index.php/xmiserver/xmiserver-v251-beta-asp-cgi-php-jsp-mysql/" rel="nofollow">http://mimiz.cn/index.php/xmiserver/xmiserver-v251-beta-asp-cgi-php-jsp-mysql/</a></p>
+
+		</li>
+
+	
+	
+		<li id="comment-2849">
+			<cite>sanso</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-2849" title="">2009.07.11 09:27</a> </small>
+
+			<p>xmiserver 能跟IIS 共存吗？ 是否xmiserver一定需要80端口呢? 谢谢!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2861">
+			<cite><a href='http://mimiz.cn/xmiserver' rel='external nofollow' class='url'>MiMi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-2861" title="">2009.07.12 13:48</a> </small>
+
+			<p>To sanso：<br />
+可以跟IIS共存，修改Server/Apache/conf/httpd.conf文件，查找Listen 80 ，将80改为你想使用的端口，重启Apache即可生效。</p>
+
+		</li>
+
+	
+	
+		<li id="comment-2867">
+			<cite>sanso</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-2867" title="">2009.07.13 10:11</a> </small>
+
+			<p>但是改过之后就&#8221;该页无法显示&#8221;啊!</p>
+<p>不知道什么原因,我把Server/Apache/conf/httpd.conf文件里的Listen 80改为8080,(此文件下面的ServerName localhost:8080 默认也是8080)</p>
+<p>且Tomcat/conf/server.xml里的,</p>
+<p>也是8080.</p>
+<p>请问是什么原因啊,谢谢!</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2879">
+			<cite><a href='http://mimiz.cn/xmiserver' rel='external nofollow' class='url'>mimi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-2879" title="">2009.07.14 09:03</a> </small>
+
+			<p>Apache和Tomcat不可以使用相同的端口，除非您懂得配置ajp和proxy，否则请不要随便修改Tomcat的端口。</p>
+
+		</li>
+
+	
+	
+		<li id="comment-2880">
+			<cite>sanso</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-2880" title="">2009.07.14 10:27</a> </small>
+
+			<p>Tomcat里的端口默认是8080的吧,我没有改过哦.</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;<br />
+我今天只是把apache里的httpd.conf 的<br />
+Listen 80改为82<br />
+ServerName <a href="http://www.abc.net.cn:82" rel="nofollow">http://www.abc.net.cn:82</a></p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;<br />
+再把 Tomcat/conf/server.xml</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+<p>请问server.xml里的域名&#8221;abc.net.cn&#8221;  需要带端口82吗？</p>
+<p>我的需求是这样的,<br />
+IIS需要运行网站www.xyz.com(此站用80端口),<br />
+XmiServer运行另一个站abc.net.cn(此站用82端口)</p>
+<p>经上面的httpd.conf,server.xml设置后,<br />
+访问localhost:82的时候,可以正常显示.<br />
+访问abc.net.cn:82的时候无法显示.<br />
+当我访问abc.net.cn的时候,它显示的是IIS的www.xyz.com的内容啊,</p>
+<p>请问问题出在那里呢? (估计是有关域名设置的地方出问题了,但我不知道是那里)</p>
+<p>谢谢!</p>
+<p>请问server.xml里的域名&#8221;abc.net.cn&#8221;  需要带端口82吗？</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-2889">
+			<cite>sanso</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-2889" title="">2009.07.15 13:55</a> </small>
+
+			<p>不好意思,上面的漏了点.</p>
+<p>—————————————<br />
+再把 Tomcat/conf/server.xml 如下设置</p>
+<p>—————————————</p>
+
+		</li>
+
+	
+	
+		<li id="comment-2890">
+			<cite>sanso</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-2890" title="">2009.07.15 13:56</a> </small>
+
+			<p>怎么会发不出呢,  我把括号去掉看看.</p>
+<p>Engine name=&#8221;Catalina&#8221; defaultHost=&#8221;abc.net.cn&#8221;</p>
+<p>Host name=&#8221;abc.net.cn&#8221;  appBase=&#8221;D:/XmiServer/wwwRoot/old&#8221;<br />
+            unpackWARs=&#8221;true&#8221; autoDeploy=&#8221;true&#8221;<br />
+            xmlValidation=&#8221;false&#8221; xmlNamespaceAware=&#8221;false&#8221;</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-3021">
+			<cite><a href='http://MiMiz.cn' rel='external nofollow' class='url'>MiMi</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-3021" title="">2009.07.24 22:17</a> </small>
+
+			<p>根据您的问题描述，需要配置Apache基于主机名的虚拟主机：abc.net.cn:82<br />
+配置方法为：<br />
+&lt;VirtualHost *:82&gt;<br />
+ServerName abc.net.cn<br />
+DocumentRoot /abc.net.cn/<br />
+&lt;/VirtualHost&gt;</p>
+
+		</li>
+
+	
+	
+		<li id="comment-3072">
+			<cite>sanso</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-3072" title="">2009.07.28 09:55</a> </small>
+
+			<p>是修改 Apache\conf\extra\httpd-vhosts.conf 里的吧? </p>
+<p>这个把月来我都修改过很多个地方了, 就是配置不了. </p>
+<p>不知道大哥有没有时间呢,运程瞄一下. ^-^</p>
+
+		</li>
+
+	
+	
+		<li class="alt" id="comment-5544">
+			<cite><a href='http://www.afish007.com' rel='external nofollow' class='url'>afish007</a></cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-5544" title="">2010.03.29 14:32</a> </small>
+
+			<p>装上了，很强大，请教一下怎么添加网站域名呢？ 😕</p>
+
+		</li>
+
+	
+	
+	</ol>
+
+ 
+
+
+<h3 id="respond">Leave a Reply !</h3>^_^您敢留下回复吗？
+
+
+<form action="http://mimiz.cn/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name (required)</small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="20" />
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="46d24614c4" /></p><p class="cptch_block"><label style="word-wrap: break-word;">Captcha<span class="required"> *</span></label><br />		<input type="hidden" name="cptch_result" value="mWw=" />
+		<input type="hidden" name="cptch_time" value="1447183728" />
+		<input type="hidden" value="Version: 4.1.5" />
+		<label for="cptch_input" style="width: 100%;">8 &minus; 1 =  <input id="cptch_input" class="cptch_input" type="text" autocomplete="off" name="cptch_number" value="" maxlength="2" size="2" aria-required="true" required="required" style="margin-bottom:0;display:inline;font-size: 12px;width: 40px;" /></label></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="46"/></p>
+</form>
+
+
+  	</div>
+
+		
+</div>
+
+<div id="sidebar">
+		<div class="searchbox">
+			<form class="searchform" method="get" action="http://mimiz.cn/">
+		<input class="searchsub" type="submit" value="" />
+		<input class="searchbar" type="text" name="s" value="搜索一下  你就知道 ^_^" onclick="this.select()" />
+	</form><br />
+		</div>	
+		<div class="postbox"><h6>近期评论</h6><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">bleri</span>发表在《<a href="http://mimiz.cn/index.php/xmiserver/xmiserver-v251-beta-asp-cgi-php-jsp-mysql/comment-page-3/#comment-20226">XmiServer_v2.5.1_beta ASP+CGI+PHP+JSP+MySQL 全能服务器套件发布！</a>》</li><li class="recentcomments"><span class="comment-author-link"><a href='http://www.koukousky.com/back/php/367.html' rel='external nofollow' class='url'>php $_SERVER中的SERVER_NAME 和HTTP_HOST的区别（转） | KouKou</a></span>发表在《<a href="http://mimiz.cn/index.php/php/php-http_host-server_name-difference/comment-page-1/#comment-19990">PHP中 HTTP_HOST 和 SERVER_NAME 的区别</a>》</li><li class="recentcomments"><span class="comment-author-link">gaharu</span>发表在《<a href="http://mimiz.cn/index.php/reprint/wordpress-vs-drupal-vs-expression-engine/comment-page-1/#comment-19920">WordPress Vs Drupal Vs Expression Engine: Which Blog Software Should I Use?</a>》</li><li class="recentcomments"><span class="comment-author-link"><a href='http://or2.in' rel='external nofollow' class='url'>copriwolf</a></span>发表在《<a href="http://mimiz.cn/index.php/mac/set-up-apache-mysql-php-phpmyadmin-on-mac-osx/comment-page-1/#comment-19772">在 Mac OS X 系统下配置 Apache MySQL PHP phpMyAdmin 环境</a>》</li><li class="recentcomments"><span class="comment-author-link"><a href='http://MiMiz.cn' rel='external nofollow' class='url'>MiMi</a></span>发表在《<a href="http://mimiz.cn/index.php/mac/set-up-apache-mysql-php-phpmyadmin-on-mac-osx/comment-page-1/#comment-19716">在 Mac OS X 系统下配置 Apache MySQL PHP phpMyAdmin 环境</a>》</li></ul></div><div class="postbox"><h6>标签</h6><div class="tagcloud"><a href='http://mimiz.cn/index.php/tag/blog/' class='tag-link-15' title='3个话题' style='font-size: 12.666666666667pt;'>Blog</a>
+<a href='http://mimiz.cn/index.php/tag/bom/' class='tag-link-16' title='2个话题' style='font-size: 10.8pt;'>BOM</a>
+<a href='http://mimiz.cn/index.php/tag/code/' class='tag-link-17' title='1个话题' style='font-size: 8pt;'>Code</a>
+<a href='http://mimiz.cn/index.php/tag/css/' class='tag-link-18' title='4个话题' style='font-size: 14.222222222222pt;'>CSS</a>
+<a href='http://mimiz.cn/index.php/tag/div/' class='tag-link-19' title='1个话题' style='font-size: 8pt;'>DIV</a>
+<a href='http://mimiz.cn/index.php/tag/dream%e5%8e%9f%e5%88%9b/' class='tag-link-20' title='14个话题' style='font-size: 21.688888888889pt;'>DReaM.原创</a>
+<a href='http://mimiz.cn/index.php/tag/drupal/' class='tag-link-73' title='5个话题' style='font-size: 15.466666666667pt;'>Drupal</a>
+<a href='http://mimiz.cn/index.php/tag/eclipse/' class='tag-link-47' title='1个话题' style='font-size: 8pt;'>eclipse</a>
+<a href='http://mimiz.cn/index.php/tag/flash/' class='tag-link-56' title='2个话题' style='font-size: 10.8pt;'>flash</a>
+<a href='http://mimiz.cn/index.php/tag/free/' class='tag-link-63' title='5个话题' style='font-size: 15.466666666667pt;'>Free</a>
+<a href='http://mimiz.cn/index.php/tag/hack/' class='tag-link-42' title='1个话题' style='font-size: 8pt;'>Hack</a>
+<a href='http://mimiz.cn/index.php/tag/ide/' class='tag-link-41' title='1个话题' style='font-size: 8pt;'>ide</a>
+<a href='http://mimiz.cn/index.php/tag/iis/' class='tag-link-21' title='1个话题' style='font-size: 8pt;'>IIS</a>
+<a href='http://mimiz.cn/index.php/tag/linux/' class='tag-link-64' title='6个话题' style='font-size: 16.555555555556pt;'>Linux</a>
+<a href='http://mimiz.cn/index.php/tag/logo/' class='tag-link-22' title='2个话题' style='font-size: 10.8pt;'>logo</a>
+<a href='http://mimiz.cn/index.php/tag/mac/' class='tag-link-60' title='2个话题' style='font-size: 10.8pt;'>Mac</a>
+<a href='http://mimiz.cn/index.php/tag/mimi/' class='tag-link-65' title='11个话题' style='font-size: 20.133333333333pt;'>MiMi</a>
+<a href='http://mimiz.cn/index.php/tag/opencart/' class='tag-link-57' title='2个话题' style='font-size: 10.8pt;'>OpenCart</a>
+<a href='http://mimiz.cn/index.php/tag/photo/' class='tag-link-66' title='5个话题' style='font-size: 15.466666666667pt;'>Photo</a>
+<a href='http://mimiz.cn/index.php/tag/php/' class='tag-link-23' title='15个话题' style='font-size: 22pt;'>PHP</a>
+<a href='http://mimiz.cn/index.php/tag/poetry/' class='tag-link-67' title='2个话题' style='font-size: 10.8pt;'>Poetry</a>
+<a href='http://mimiz.cn/index.php/tag/postgresql/' class='tag-link-44' title='1个话题' style='font-size: 8pt;'>PostgreSQL</a>
+<a href='http://mimiz.cn/index.php/tag/proxy/' class='tag-link-49' title='1个话题' style='font-size: 8pt;'>Proxy</a>
+<a href='http://mimiz.cn/index.php/tag/qingdao/' class='tag-link-24' title='2个话题' style='font-size: 10.8pt;'>QingDao</a>
+<a href='http://mimiz.cn/index.php/tag/rewrite/' class='tag-link-39' title='1个话题' style='font-size: 8pt;'>Rewrite</a>
+<a href='http://mimiz.cn/index.php/tag/swfobject/' class='tag-link-55' title='2个话题' style='font-size: 10.8pt;'>swfobject</a>
+<a href='http://mimiz.cn/index.php/tag/ubuntu/' class='tag-link-45' title='1个话题' style='font-size: 8pt;'>Ubuntu</a>
+<a href='http://mimiz.cn/index.php/tag/vpn/' class='tag-link-48' title='1个话题' style='font-size: 8pt;'>VPN</a>
+<a href='http://mimiz.cn/index.php/tag/windows/' class='tag-link-26' title='1个话题' style='font-size: 8pt;'>Windows</a>
+<a href='http://mimiz.cn/index.php/tag/windows-os/' class='tag-link-70' title='3个话题' style='font-size: 12.666666666667pt;'>Windows-OS</a>
+<a href='http://mimiz.cn/index.php/tag/wordpress/' class='tag-link-68' title='14个话题' style='font-size: 21.688888888889pt;'>Wordpress</a>
+<a href='http://mimiz.cn/index.php/tag/xmiserver/' class='tag-link-69' title='11个话题' style='font-size: 20.133333333333pt;'>XmiServer</a>
+<a href='http://mimiz.cn/index.php/tag/zend-framework/' class='tag-link-46' title='2个话题' style='font-size: 10.8pt;'>Zend framework</a>
+<a href='http://mimiz.cn/index.php/tag/zend-studio/' class='tag-link-43' title='4个话题' style='font-size: 14.222222222222pt;'>Zend Studio</a>
+<a href='http://mimiz.cn/index.php/tag/daima/' class='tag-link-27' title='1个话题' style='font-size: 8pt;'>代码</a>
+<a href='http://mimiz.cn/index.php/tag/mianfei/' class='tag-link-28' title='3个话题' style='font-size: 12.666666666667pt;'>免费</a>
+<a href='http://mimiz.cn/index.php/tag/mianfeishaduruanjian/' class='tag-link-29' title='1个话题' style='font-size: 8pt;'>免费杀毒软件</a>
+<a href='http://mimiz.cn/index.php/tag/jiami/' class='tag-link-30' title='1个话题' style='font-size: 8pt;'>加密</a>
+<a href='http://mimiz.cn/index.php/tag/opensource/' class='tag-link-32' title='2个话题' style='font-size: 10.8pt;'>开源</a>
+<a href='http://mimiz.cn/index.php/tag/bianma/' class='tag-link-33' title='2个话题' style='font-size: 10.8pt;'>编码</a>
+<a href='http://mimiz.cn/index.php/tag/bianji/' class='tag-link-34' title='1个话题' style='font-size: 8pt;'>编辑</a>
+<a href='http://mimiz.cn/index.php/tag/%e7%bf%bb%e5%a2%99/' class='tag-link-50' title='1个话题' style='font-size: 8pt;'>翻墙</a>
+<a href='http://mimiz.cn/index.php/tag/chonggou/' class='tag-link-35' title='2个话题' style='font-size: 10.8pt;'>重构</a>
+<a href='http://mimiz.cn/index.php/tag/yincang/' class='tag-link-36' title='1个话题' style='font-size: 8pt;'>隐藏</a>
+<a href='http://mimiz.cn/index.php/tag/mofa/' class='tag-link-37' title='1个话题' style='font-size: 8pt;'>魔法</a></div>
+</div><div class="postbox"><h6>分类目录</h6>		<ul>
+	<li class="cat-item cat-item-40"><a href="http://mimiz.cn/index.php/category/drupal/" >Drupal</a> (5)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://mimiz.cn/index.php/category/free/" title="免费资源">Free</a> (4)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://mimiz.cn/index.php/category/linux/" title="Linux">Linux</a> (7)
+</li>
+	<li class="cat-item cat-item-61"><a href="http://mimiz.cn/index.php/category/mac/" >Mac</a> (2)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://mimiz.cn/index.php/category/mimi/" title="MiMi原创">MiMi</a> (11)
+</li>
+	<li class="cat-item cat-item-51"><a href="http://mimiz.cn/index.php/category/open-source/" >OpenSource</a> (9)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://mimiz.cn/index.php/category/photo/" >Photo</a> (4)
+</li>
+	<li class="cat-item cat-item-71"><a href="http://mimiz.cn/index.php/category/php/" >PHP</a> (9)
+</li>
+	<li class="cat-item cat-item-8"><a href="http://mimiz.cn/index.php/category/poetry/" >Poetry</a> (6)
+</li>
+	<li class="cat-item cat-item-9"><a href="http://mimiz.cn/index.php/category/reprint/" title="转载">Reprint</a> (5)
+</li>
+	<li class="cat-item cat-item-52"><a href="http://mimiz.cn/index.php/category/security/" >Security</a> (1)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://mimiz.cn/index.php/category/web/" >WEB</a> (16)
+</li>
+	<li class="cat-item cat-item-11"><a href="http://mimiz.cn/index.php/category/windows-os/" >Windows-OS</a> (6)
+</li>
+	<li class="cat-item cat-item-12"><a href="http://mimiz.cn/index.php/category/wordpress/" >Wordpress</a> (12)
+</li>
+	<li class="cat-item cat-item-13"><a href="http://mimiz.cn/index.php/category/xmiserver/" >XmiServer</a> (11)
+</li>
+	<li class="cat-item cat-item-38"><a href="http://mimiz.cn/index.php/category/dream/" title="DReaM._原创">想伱.零点零一分</a> (14)
+</li>
+		</ul>
+</div><div class="postbox"><h6>blogroll</h6>
+	<ul class='xoxo blogroll'>
+<li><a href="http://grick.net/" target="_blank">grick’s blog</a></li>
+<li><a href="http://www.w3club.cn" target="_blank">W3Club</a></li>
+<li><a href="http://www.seven2.com.cn" target="_blank">七二</a></li>
+<li><a href="http://www.95top.com/" target="_blank">九五互联</a></li>
+<li><a href="http://www.im47.cn/" target="_blank">思奇博客</a></li>
+<li><a href="http://www.fushanlang.com/" target="_blank">浮山狼</a></li>
+<li><a href="http://www.hensy.net" target="_blank">痕色印象</a></li>
+<li><a href="http://blog.webhtml.org" title="绣财日志" target="_blank">绣财日志</a></li>
+<li><a href="http://snamper.cn/" target="_blank">阿沃工作室</a></li>
+<li><a href="http://qd8.org/" target="_blank">青岛站长联盟</a></li>
+
+	</ul>
+</div>
+<!-- sidebar -->
+	<div id="feed" class="postbox">
+		<h3>Feeds</h3>
+		<ul class="feed">
+			<li><a href="http://mimiz.cn/index.php/feed/">RSS Feed</a></li>
+			<li><a href="http://mimiz.cn/index.php/feed/atom/">Atom Feed</a></li>
+		</ul>
+	</div>	
+</div>	<div class="clear"></div>
+</div><!-- 主框架main -->
+
+<div id="footer">
+如无特别说明 本站作品采用 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">知识共享署名 3.0 Unported</a> 许可协议 进行许可。<br />
+Copyright &copy; 2008 <a href="http://mimiz.cn">觅觅守候</a> All Rights Reserved.
+<br />
+<a href="http://www.miibeian.gov.cn/" target="_blank">鲁ICP备05057482号</a><!--36 queries. 0.334 seconds. -->
+<br />
+
+<script language="javascript" type="text/javascript" src="http://js.users.51.la/729555.js"></script>
+<noscript><a href="http://www.51.la/?729555" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/729555.asp" style="border:none" /></a></noscript>
+
+<script src='http://s135.cnzz.com/stat.php?id=786054&web_id=786054' language='JavaScript' charset='gb2312'></script>
+
+<br />
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a>
+</div>
+
+<script type='text/javascript' src='http://mimiz.cn/wp-content/plugins/akismet/_inc/form.js?ver=3.1.5'></script>
+
+</body>
+</html>
